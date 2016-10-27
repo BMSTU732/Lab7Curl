@@ -1,0 +1,5 @@
+project(Lab7Curl)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+find_package(CURL REQUIRED)
+add_executable(Lab7Curl examples/main.cpp)
+target_link_libraries(Lab7Curl ${CURL_LIBRARY})
